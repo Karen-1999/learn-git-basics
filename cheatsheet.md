@@ -3,20 +3,30 @@
 ##### Cloning your remote directory
         git clone <remote directory>
 
+
 ##### Checking that status of your local repository
         git status
 
 ##### Pulling down all branches in a remote repo, not just the default branch
         git fetch --all
 
+
+##### Checking that status of your local repository - shows changed but not added files in red
+		git status
+
+
 ##### Creating a new branch for you to work on
         git branch <new branch name>
+
+##### See all branches in your remote repository
+		git branch -a
 
 ##### Moving onto a branch
         git checkout <branch name>
 
 ##### Deleting a branch
 		git branch -d <branch name>
+
 
 ##### Moving your changes to the staging area
         git add <file name>
@@ -35,3 +45,10 @@
 
 ##### Pulling remote changes into your local repo
         git pull origin <branch name>
+
+##### Moving files while preserving git history
+		git mv <source> <destination>
+
+##### Creates a branch, and moves you onto it AT THE SAME TIME
+		git checkout -b <new branch name>
+
